@@ -1,0 +1,19 @@
+{
+    "configurations": [
+        {
+            "name": "CUDA C++: Launch",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/particle.cu",
+        },
+        {
+            "name": "(Windows) CUDA Launch",
+            "type": "cuda-gdb",
+            "request": "launch",
+            "program": "${workspaceFolder}/out/build-cuda/${command:cmake.activeConfigurePresetName}/main.exe",
+            "cwd": "${workspaceRoot}", //"cwd": "${fileDirname}",
+            "preLaunchTask": "CMake: build",
+            "stopAtEntry": false,
+        }
+    ]
+}

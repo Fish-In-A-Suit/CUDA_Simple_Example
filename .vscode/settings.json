@@ -1,0 +1,5 @@
+{
+    "cmake.buildTask": false,
+    "cmake.enableTraceLogging": true,
+    "cmake.useCMakePresets": "always"
+}
